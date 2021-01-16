@@ -3,7 +3,7 @@ const counters = document.querySelectorAll('counter')
 counters.forEach(counter => {
     counter.inntText = '0'
 
-    const updateCpunter = () => {
+    const updateCounter = () => {
         const target = +counter.getAttribute('data-target')
         const c = +counter.innerText
 
@@ -17,5 +17,5 @@ counters.forEach(counter => {
         }
     }
 
-    updateCpunter()
+    updateCounter()
 })
